@@ -16,14 +16,14 @@ public class Elipse {
     private double eixo1, eixo2;
     
     public Elipse(double r, double s){
-        eixo1 = r;
-        eixo2 = s;
+        eixo1 = r/2;
+        eixo2 = s/2;
     }
     
     public double getArea(){
         double area;
         
-        area = eixo1/2 * eixo2/2 * PI;
+        area = eixo1 * eixo2 * PI;
         
         return area;
     }
@@ -31,7 +31,7 @@ public class Elipse {
     public double getPerimetro(){
         double perimetro;
         
-        perimetro = PI * (3*(eixo1/2+eixo2/2) - sqrt((3*eixo1/2+eixo2/2)*(eixo1/2+3*eixo2/2)));
+        perimetro = PI * (3*(eixo1+eixo2) - sqrt((3*eixo1+eixo2)*(eixo1+3*eixo2)));
         
         return perimetro;
     }
