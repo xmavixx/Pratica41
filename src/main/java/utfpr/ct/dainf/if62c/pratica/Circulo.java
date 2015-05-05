@@ -17,7 +17,7 @@ public class Circulo extends Elipse {
 
     public Circulo(double r, double s) {
         super(r, s);
-        raio = r;
+        raio = r/2;
     }
 
     @Override
